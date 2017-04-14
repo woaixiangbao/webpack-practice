@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/woaixiangbao/webpack-practice/issues"
   },
-  "homepage": "https://github.com/woaixiangbao/webpack-practice#readme"
+  "homepage": "https://github.com/woaixiangbao/webpack-practice#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
 }
