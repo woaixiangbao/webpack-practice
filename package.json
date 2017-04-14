@@ -1,0 +1,23 @@
+{
+  "name": "webpack-practice",
+  "version": "1.0.0",
+  "description": "to learn webpack to build npm  project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woaixiangbao/webpack-practice.git"
+  },
+  "keywords": [
+    "webpack",
+    "npm"
+  ],
+  "author": "jianqing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woaixiangbao/webpack-practice/issues"
+  },
+  "homepage": "https://github.com/woaixiangbao/webpack-practice#readme"
+}
