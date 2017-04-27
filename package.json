@@ -7,7 +7,7 @@
     "example": "example"
   },
   "scripts": {
-    "start": "webpack-dev-server --quiet & http-server -c-1 -p 8082",
+    "start": "webpack-dev-server --quiet & http-server -c-1 -p 8081",
     "build-release": "webpack --env.production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

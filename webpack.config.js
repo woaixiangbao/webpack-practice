@@ -7,10 +7,11 @@ module.exports = function(env = {}){
 	let name 				= packageConf.name,
 		version 			= packageConf.version,
 		library				= name.replace(/^(\w)/, m => m.toUpperCase()),
-		proxyPort 			= 8082,
+		proxyPort 			= 8081,
 		plugins				= [],
 		loaders				= [];
 
+		console.log(env);
 	if(env.production){
 		name += `-${version}.min`;
 
@@ -26,16 +27,18 @@ module.exports = function(env = {}){
 
 	if(fs.existsSync('./.babelrc')){
 		let babelConf = JSON.parse(fs.readFileSync('.babelrc'));
+		console.log(83838);
+		console.log(babelConf);
 		loaders.push({
 			test: /\.js$/,
 			exclude: /(node_modules|bower_components)/,
 			loader: 'babel-loader',
-			options: {
-				presets: ["es2015"]
-			}
+			query: babelConf
 		});
 	}
 
+	console.log(63737);
+	console.log(version);
 	return {
 		entry: './lib/app.js',
 		output: {
